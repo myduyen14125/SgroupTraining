@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinKyou</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="choice.css">
+</head>
+<body>
+  <div class="wrapper__header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="/assets/logo.png" alt="Linkyou">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="multiplechoice.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="multiplechoice.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kênh tài nguyên
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Trắc nghiệm BMI</a>
+                <a class="dropdown-item" href="#">Ngành nghề</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tư vấn riêng</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cộng đồng</a>
+            </li>
+          </ul>
+          <form class="form-inline my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-success my-sm-0" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="wrapper__content container">
+    <div class="row">
+      <img style="width: 100%; margin: 2vh 0; cursor: pointer;" src="/assets/banner2.png" alt="">
+    </div>
+    <hr>
+    <div class="row mt-5 text-center justify-content-center mb-5">
+      <div class="col-xl-12 col-lg-9">
+          <h2 class="font-weight-bold">TRẮC NGHIỆM - NHÓM TÍNH CÁCH</h2>
+          <p class="text-muted">- Đây là những câu trắc nghiệm tâm lý vì vậy nó phụ thuộc khá nhiều vào tâm trạng hiện tại của bạn, nếu bạn đang quá vui, buồn, căng thẳng, phấn khích hay đang trong quá trình thay đổi tính cách thì không nên làm. Hãy làm bài khi tâm trạng bình thường nhất. <br>
+            - Phải trung thực và suy nghĩ thật kỹ trước khi trả lời, không nên chọn theo lý tưởng hay vì tác động của mọi người xung quanh. 
+          </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+        <div class="py-2 h5"><b>1. Khi bạn đi đến một nơi nào đó trong ngày, bạn sẽ</b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+            <label class="options"> lên danh sách các công việc và thời gian thực hiện các công việc khi bạn đến đó 
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="options">nghĩ đến công việc sẽ làm rồi đi thôi
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+      </div>
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+        <div class="py-2 h5"><b>2. Nếu bạn là một giáo viên, bạn muốn dạy</b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+            <label class="options"> các khóa học thực nghiệm (thực tế)
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="options">các khóa học liên quan đến lý thuyết 
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+      </div>
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+        <div class="py-2 h5"><b>3. Trong công việc hàng ngày của bạn, bạn có </b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+            <label class="options">lập kế hoạch cho các công việc, do đó bạn sẽ không phải làm việc dưới áp lực
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="options">thích làm việc trong tình trạng khẩn cấp, chạy đua với thời gian,
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="options">ghét phải làm việc dưới áp lực?
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+      </div>
+      
+    </div>
+    <div class="d-flex align-items-center pt-3">
+      <div id="prev">
+          <button class="btn btn-primary">Làm lại</button>
+      </div>
+      <div class="ml-auto mr-sm-5">
+          <button class="btn btn-success">
+            <a href="/result.html" style="color: white;">Kết quả</a>
+          </button>
+      </div>
+  </div>
+  </div>
+  
+  <div class="wrapper__footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Thông tin liên hệ</h3>
+          <p>Địa chỉ: 123 Nguyễn Văn Linh, Đà Nẵng</p>
+          <p>Điện thoại: 0123456789</p>
+          <p>Email: linkyou@gmail.com</p>
+        </div> 
+        <div class="col-md-4">
+          <h3>Liên kết</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>  
+        <div class="col-md-4">
+          <h3>Đăng ký nhận tin</h3>
+          <p>Đăng ký để nhận thông tin mới nhất từ chúng tôi</p>
+          <form action="">
+            <input type="text" placeholder="Email của bạn">
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>  
+      </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
