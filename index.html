@@ -4,33 +4,238 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hehe</title>
-  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <title>LinKyou</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap" rel="stylesheet"> 
-  <style>
-    
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    p {
-      background-color: aqua;
-      border: 4px solid red;
-      border-radius: 100%;
-      padding: 100px;
-      margin: auto;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&family=Mulish:wght@300;400&display=swap" rel="stylesheet"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrapper__header">
-    <li>kjhkdf</li>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="/assets/logo.png" alt="Linkyou">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="multiplechoice.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="multiplechoice.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kênh tài nguyên
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Trắc nghiệm BMI</a>
+                <a class="dropdown-item" href="#">Ngành nghề</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tư vấn riêng</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cộng đồng</a>
+            </li>
+          </ul>
+          <form class="form-inline my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-success my-sm-0" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+      </nav>
+    </div>
   </div>
-  <div class="content">
-    <p>hello</p>
-    <img src="https://images.unsplash.com/photo-1626120000008-8b8b8b8b8b8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+  <div class="wrapper__content container">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/slide0.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.vietnamnews.vn/uploadvnnews/Article/2018/8/10/hoangsuphi265105755AM.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="http://images4.fanpop.com/image/photos/22700000/Photo-frame-photo-frames-22786131-2100-1500.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="row wrapper--introduction d-flex justify-content-between">
+      <div class="introduction__item col-lg-6 text-right d-flex flex-column justify-content-center">
+        <h3 class="introduction__title">LinKYou - Hướng đến tương lai</h3>
+        <p class="introduction__description">Tư vấn miễn phí về ngành nghề, học phí, học bổng, du học,...</p>
+      </div>
+      <div class="introduction__item col-lg-6">
+        <h3 class="introduction__title">LinKyou ra đời</h3>
+        <p class="introduction__description"> Với sứ mệnh là người đồng hành cùng các bạn trẻ (đặc biệt là độ tuổi THPT) có thể xác định lộ trình nghề nghiệp tương lai của bản thân một cách rõ ràng nhất trong việc đưa ra quyết định chọn hướng học, chọn nghề sao cho phù hợp với sở thích, khả năng, cá tính và giá trị nghề nghiệp của bản thân, đồng thời phù hợp với điều kiện, hoàn cảnh gia đình và nhu cầu lao động của xã hội.</p>
+      </div>
+
+    </div>
+    <hr>
+    <div class="row mt-5 text-center justify-content-center mb-5">
+      <div class="col-xl-6 col-lg-8">
+          <h2 class="font-weight-bold">Lộ trình phát triển</h2>
+          <p class="text-muted">Với timeline phù hợp và quy trình phát triển bền vững, mang đến cho người dùng những trải nghiệm tốt nhất và được hướng dẫn tốt nhất khi đến với ứng dụng của chúng tôi.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+              <div class="timeline-step">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Tìm hiểu">
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">Tìm hiểu</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">Định hướng bản thân</p>
+                  </div>
+              </div>
+              <div class="timeline-step">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Buổi 2">
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">Buổi 1</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">Khởi động</p>
+                  </div>
+              </div>
+              <div class="timeline-step">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Buổi 2">
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">Buổi 2</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">Training</p>
+                  </div>
+              </div>
+              <div class="timeline-step">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Buổi 3">
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">Buổi 3</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">Vững vàng</p>
+                  </div>
+              </div>
+              <div class="timeline-step mb-0">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Buổi 4">
+                      <div class="inner-circle"></div>
+                      <p class="h6 mt-3 mb-1">Buổi 4</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0">Chinh phục</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row mt-5 text-center justify-content-center mb-4">
+      <div class="col-xl-6 col-lg-8">
+          <h2 class="font-weight-bold">NHỮNG MỤC TIÊU HƯỚNG TỚI</h2>
+      </div>
+    </div>
+    <div class="row counter">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <div class="employees">
+              <p class="counter-count">10</p>
+              <p class="desc">Doanh nghiệp đối tác</p>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <div class="customer">
+              <p class="counter-count">200</p>
+              <p class="desc">Học viên</p>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <div class="design">
+              <p class="counter-count">1050</p>
+              <p class="desc">Yêu cầu</p>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <div class="order">
+              <p class="counter-count">652</p>
+              <p class="desc">Lượt yêu thích</p>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row d-flex text-center justify-content-center mb-3">
+      <h2>Cảm nhận của khách hàng</h2>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="card mx-4" style="width: 40%;">
+        <img class="card-img-top" src="https://dongphuchaianh.com/wp-content/uploads/2022/07/kieu-toc-mac-ao-dai-hoc-sinh-tha-tu-nhien.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lê Vân Anh - Học sinh THPT</h5>
+          <p class="card-text">Tôi lựa chọn ngành học tương lai cho bản thân vì nó HOT và có thể kiếm ra tiền. Tuy nhiên tôi vẫn cảm thấy bứt rứt vì tôi không biết cái gì mới thực sự hợp với mình!</p>
+          <a href="#" class="btn btn-primary">Chi tiết</a>
+        </div>
+      </div>
+      <div class="card mx-4" style="width: 40%;">
+        <img class="card-img-top" src="https://icdn.dantri.com.vn/thumb_w/680/2022/10/04/nguyenthicuc-1664873476554.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">ABC - Phụ huynh</h5>
+          <p class="card-text">Với tư cách là một người đi trước nên tôi luôn muốn con mình được hướng  nghiệp từ sớm. Bởi tôi không muốn con mình phải tốn thời gian để vật lộn tìm lại định hướng trong khi học đại học hay thậm chí là khi đã đi làm. Tuy  nhiên, các hoạt động hướng nghiệp hiện nay vẫn chưa đủ bài bản, thực tế để tôi cho con mình tham gia.</p>
+          <a href="#" class="btn btn-primary">Chi tiết</a>
+        </div>
+      </div>
+    </div>
+    
+  
   </div>
+  
+  <div class="wrapper__footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Thông tin liên hệ</h3>
+          <p>Địa chỉ: 123 Nguyễn Văn Linh, Đà Nẵng</p>
+          <p>Điện thoại: 0123456789</p>
+          <p>Email: linkyou@gmail.com</p>
+        </div> 
+        <div class="col-md-4">
+          <h3>Liên kết</h3>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>  
+        <div class="col-md-4">
+          <h3>Đăng ký nhận tin</h3>
+          <p>Đăng ký để nhận thông tin mới nhất từ chúng tôi</p>
+          <form action="">
+            <input type="text" placeholder="Email của bạn">
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>  
+      </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
